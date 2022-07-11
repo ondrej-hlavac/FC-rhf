@@ -76,4 +76,39 @@ const handleChange = (e: Event) => {
 
 ---
 
-# RHF - obecné info
+# ReactHookForm (RHF) - obecné info
+
+- knihovna na práci s formuláři pro ReactJS a ReactNative
+- poslední verze je v7, na githubu cca 29k hvězdiček, stále aktualizované
+- https://github.com/react-hook-form/react-hook-form
+- bez dalších dependencies
+- lightweight
+- dobře dokumentované API - https://react-hook-form.com/api
+- aktuálně probíhá vývoj extension pro chrome: https://github.com/react-hook-form/devtools-extension
+- novinky na twitteru: https://twitter.com/HookForm
+
+---
+
+# RHF - demo
+
+1. zkopírování formuláře z první části
+2. instalace react-hook-form
+3. useForm hook
+4. validace
+
+---
+
+# RHF - demo
+
+add2) npm install react-hook-form
+add3) zbavíme se `onchange` a `name` v inputech nahrazením funkce `register`
+add3) obalíme `onSubmit` handlerem s react hook form `handleSubmit`
+add4) doplníme funkci register o validace, jedná se o druhý parametr funkce register
+
+---
+
+# Diskuse
+
+- jaké jiné knihovny používáte?
+- na jaké problémy jste narazili při používání knihoven pro formuláře?
+- code examples: https://github.com/react-hook-form/react-hook-form/tree/master/examples

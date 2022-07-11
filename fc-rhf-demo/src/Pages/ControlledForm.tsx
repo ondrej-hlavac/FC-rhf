@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import Result from "../components/Result";
 
 type Event = ChangeEvent<HTMLInputElement | HTMLSelectElement>;
@@ -10,7 +10,7 @@ const ControlledForm = () => {
 
   renderCount++;
 
-  const handleSubmit = (e: FormEvent) => {
+  const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     alert(`form submit data: ${JSON.stringify(formData)}`);
   };
@@ -23,7 +23,7 @@ const ControlledForm = () => {
   return (
     <>
       <h1>Controlled form</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         <label>
           Jméno
           <input type="text" name="firstName" onChange={handleChange} />
