@@ -103,7 +103,7 @@ const handleChange = (e: Event) => {
 add2) npm install react-hook-form
 add3) zbavíme se `onchange` a `name` v inputech nahrazením funkce `register`
 add3) obalíme `onSubmit` handlerem s react hook form `handleSubmit`
-add4) doplníme funkci register o validace, jedná se o druhý parametr funkce register
+add4) doplníme funkci `register` o validace, jedná se o druhý parametr funkce, standartizace https://developer.mozilla.org/en-US/docs/learn/forms/form_validation
 
 ---
 
